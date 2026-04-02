@@ -33,8 +33,10 @@ def main() -> int:
         print(result.output.strip())
         print("exit_code:", result.exit_code)
     finally:
-        client.sandboxes.delete(sandbox)
-        client.close()
+        try:
+            client.sandboxes.delete(sandbox)
+        finally:
+            client.close()
     return 0
 
 

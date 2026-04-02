@@ -8,11 +8,8 @@ help: ## Show this help message
 	@echo "Targets:"
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z0-9_. -]+:.*##/ {printf "  %-16s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-test: ## Run tests
-	uv run --group test pytest tests/ --disable-socket --allow-unix-socket
 
-tests: test
-
+test tests: TEST_FILE ?= tests/unit_tests/
 integration_test integration_tests: TEST_FILE=tests/integration_tests/
 
 test: ## Run unit tests
