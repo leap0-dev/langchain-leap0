@@ -1,4 +1,4 @@
-# langchain-leap0
+# langchain-leap0-python
 
 **Leap0** integration for [LangChain Deep Agents](https://docs.langchain.com/oss/python/deepagents/sandboxes): a `BaseSandbox` backend that runs shell commands and file transfers inside a Leap0 sandbox.
 
@@ -37,13 +37,12 @@ finally:
 
 ## Examples
 
-Runnable scripts for [Deep Agents sandboxes](https://docs.langchain.com/oss/python/deepagents/sandboxes). See `[examples/README.md](examples/README.md)` for environment variables and how they map to LangChain `**SandboxIntegrationTests**`.
+Runnable scripts for [Deep Agents sandboxes](https://docs.langchain.com/oss/python/deepagents/sandboxes). Environment variables and run commands are documented in each example’s module docstring. LangChain sandbox integration tests: `make integration_test`.
 
-
-| Script                                                                 | Summary                                                                                                            |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| examples/basic_sandbox.py               | Minimal: create a sandbox, `Leap0Sandbox.execute()`, teardown.                                                     |
-| examples/deep_agent_sandbox.py    | `create_deep_agent(..., backend=Leap0Sandbox(...))` — create and run a script; prints a short **execute** summary. |
+| Script                         | Summary                                                                                                                                      |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `examples/basic_sandbox.py`    | Minimal: create a sandbox, `Leap0Sandbox.execute()`, teardown. Requires `LEAP0_API_KEY`.                                                    |
+| `examples/deep_agent_sandbox.py` | `create_deep_agent(..., backend=Leap0Sandbox(...))` — agent task to create and run a Python script; prints the agent invocation result. Requires `LEAP0_API_KEY`, `OPENAI_API_KEY`; optional `OPENAI_MODEL` (default `openai:gpt-4o`). |
 
 
 From the repo root:
@@ -87,3 +86,4 @@ Full documentation is available at [leap0.dev/docs](https://leap0.dev/docs).
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE) for details.
+
