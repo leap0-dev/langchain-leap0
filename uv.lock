@@ -764,7 +764,7 @@ test = [
 requires-dist = [
     { name = "deepagents", specifier = ">=0.4.10,<0.5" },
     { name = "langchain-openai", specifier = ">=0.3,<2" },
-    { name = "leap0", specifier = ">=0.5.1,<1" },
+    { name = "leap0", specifier = ">=0.7.0,<1" },
 ]
 
 [package.metadata.requires-dev]
@@ -894,7 +894,7 @@ wheels = [
 
 [[package]]
 name = "leap0"
-version = "0.5.1"
+version = "0.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -906,9 +906,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/83/89/d42f06692e0acf874de49e8221e9f8cb59ebec24bf9f8e80fa65a40f2a30/leap0-0.5.1.tar.gz", hash = "sha256:4fad8243395bdf3a9e05ca493d57d577aeb71a8c2b027e1d59146148867986f3", size = 77913, upload-time = "2026-04-08T02:05:33.01Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2a/da/cdba8ebdc45d10f9c5cc2418de2c6000df74ed7d23f1b54ebcc108a8e0fc/leap0-0.7.0.tar.gz", hash = "sha256:1e146ed306fb48ea8cca3b5309f7a3fd0a2091e8fd2b3a52499078daa454f7aa", size = 81365, upload-time = "2026-04-14T22:06:13.409Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/a1/e1f9311ff79bf68d2d2509f83c12f0acb5aaf6d55143f120d35acffba1d9/leap0-0.5.1-py3-none-any.whl", hash = "sha256:66fea112af3945b2c009dc41f181eafabc3cf3668682498a71635d3b10c995d8", size = 103611, upload-time = "2026-04-08T02:05:31.584Z" },
+    { url = "https://files.pythonhosted.org/packages/28/3a/42be64c43f4ed1cb3053f8d93fc91940c0a4b549587714bbbe128bbf6fd9/leap0-0.7.0-py3-none-any.whl", hash = "sha256:f11bda41552af340fccaceb5e1622d2fa49d78e135f76a6401cdb2c51f9b0077", size = 107425, upload-time = "2026-04-14T22:06:11.855Z" },
 ]
 
 [[package]]
